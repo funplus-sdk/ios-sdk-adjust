@@ -8,6 +8,7 @@
 
 import Foundation
 import AdjustSdk
+import FunPlusSDK
 
 // MARK: - FunPlusAdjust
 
@@ -15,33 +16,18 @@ public class FunPlusAdjust {
     
     // MARK: - Properties
     
-    let funPlusConfig: FunPlusConfig
-    let adjustEnabled: Bool
-    let appOpenEventToken: String
-    
-    init(funPlusConfig: FunPlusConfig) {
-        self.funPlusConfig = funPlusConfig
-        self.adjustEnabled = funPlusConfig.adjustEnabled
-        self.appOpenEventToken = funPlusConfig.adjustAppOpenEventToken
+    init(appToken: String, environment: String, appOpenEventToken: String) {
+        let adjustConfig = ADJConfig(appToken: appToken, environment: environment)
+        Adjust.appDidLaunch(adjustConfig)
         
-        if adjustEnabled {
-            let appToken = funPlusConfig.adjustAppToken
-            let environment = funPlusConfig.environment.rawValue
-            let adjustConfig = ADJConfig(appToken: appToken, environment: environment)
-            Adjust.appDidLaunch(adjustConfig)
-        
-            trackAppOpenEvent()
-        }
+        trackEvent(eventToken: appOpenEventToken)
     }
     
-    public func trackAppOpenEvent() {
-        if adjustEnabled {
-            let sessionManager = FunPlusFactory.getSessionManager(funPlusConfig: funPlusConfig)
-        
-            if let event = ADJEvent(eventToken: appOpenEventToken) {
-                event.addCallbackParameter("fpid", value: sessionManager.userId)
-                Adjust.trackEvent(event)
-            }
+    public func trackEvent(eventToken: String) {
+        let uid = FunPlusSDK.getFunPlusID().getCurrentFPID()
+        if let event = ADJEvent(eventToken: eventToken) {
+            event.addCallbackParameter("fpid", value: uid)
+            Adjust.trackEvent(event)
         }
     }
 }

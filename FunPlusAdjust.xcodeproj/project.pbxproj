@@ -10,6 +10,9 @@
 		D765A4001DCC710E000C7807 /* FunPlusAdjust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D765A3F61DCC710E000C7807 /* FunPlusAdjust.framework */; };
 		D765A4051DCC710E000C7807 /* FunPlusAdjustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D765A4041DCC710E000C7807 /* FunPlusAdjustTests.swift */; };
 		D765A4071DCC710E000C7807 /* FunPlusAdjust.h in Headers */ = {isa = PBXBuildFile; fileRef = D765A3F91DCC710E000C7807 /* FunPlusAdjust.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7ADC27A1DCD8C8F0042275E /* FunPlusAdjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADC2791DCD8C8F0042275E /* FunPlusAdjust.swift */; };
+		D7ADC2901DCD8CEB0042275E /* FunPlusSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7ADC28F1DCD8CEB0042275E /* FunPlusSDK.framework */; };
+		D7ADC2911DCD8D010042275E /* AdjustSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7ADC2871DCD8C9C0042275E /* AdjustSdk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,19 +23,40 @@
 			remoteGlobalIDString = D765A3F51DCC710E000C7807;
 			remoteInfo = FunPlusAdjust;
 		};
-		D765A4151DCC714B000C7807 /* PBXContainerItemProxy */ = {
+		D7ADC2841DCD8C9C0042275E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D765A4101DCC714B000C7807 /* FunPlusSDK.xcodeproj */;
+			containerPortal = D7ADC27B1DCD8C9C0042275E /* Adjust.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D7AD02C01CA8DC3C007EBD6F;
-			remoteInfo = FunPlusSDK;
+			remoteGlobalIDString = 9679920D18BBAE2800394606;
+			remoteInfo = Adjust;
 		};
-		D765A4171DCC714B000C7807 /* PBXContainerItemProxy */ = {
+		D7ADC2861DCD8C9C0042275E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D765A4101DCC714B000C7807 /* FunPlusSDK.xcodeproj */;
+			containerPortal = D7ADC27B1DCD8C9C0042275E /* Adjust.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D7AD02CA1CA8DC3C007EBD6F;
-			remoteInfo = FunPlusSDKTests;
+			remoteGlobalIDString = 9DFA37AD1C0F219400782607;
+			remoteInfo = AdjustSdk;
+		};
+		D7ADC2881DCD8C9C0042275E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7ADC27B1DCD8C9C0042275E /* Adjust.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9DFB06101D747070006D48FC;
+			remoteInfo = AdjustSdkTv;
+		};
+		D7ADC28A1DCD8C9C0042275E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7ADC27B1DCD8C9C0042275E /* Adjust.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9615158F1CD2CB2C0022D336;
+			remoteInfo = AdjustBridge;
+		};
+		D7ADC28C1DCD8C9C0042275E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7ADC27B1DCD8C9C0042275E /* Adjust.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9679921D18BBAE2800394606;
+			remoteInfo = AdjustTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,7 +67,9 @@
 		D765A3FF1DCC710E000C7807 /* FunPlusAdjustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunPlusAdjustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D765A4041DCC710E000C7807 /* FunPlusAdjustTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunPlusAdjustTests.swift; sourceTree = "<group>"; };
 		D765A4061DCC710E000C7807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D765A4101DCC714B000C7807 /* FunPlusSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FunPlusSDK.xcodeproj; path = "../sdk-core/FunPlusSDK.xcodeproj"; sourceTree = "<group>"; };
+		D7ADC2791DCD8C8F0042275E /* FunPlusAdjust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunPlusAdjust.swift; sourceTree = "<group>"; };
+		D7ADC27B1DCD8C9C0042275E /* Adjust.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Adjust.xcodeproj; path = AdjustSdk/Adjust.xcodeproj; sourceTree = "<group>"; };
+		D7ADC28F1DCD8CEB0042275E /* FunPlusSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FunPlusSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7ADC2911DCD8D010042275E /* AdjustSdk.framework in Frameworks */,
+				D7ADC2901DCD8CEB0042275E /* FunPlusSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +96,8 @@
 		D765A3EC1DCC710E000C7807 = {
 			isa = PBXGroup;
 			children = (
-				D765A4101DCC714B000C7807 /* FunPlusSDK.xcodeproj */,
+				D7ADC28F1DCD8CEB0042275E /* FunPlusSDK.framework */,
+				D7ADC27B1DCD8C9C0042275E /* Adjust.xcodeproj */,
 				D765A3F81DCC710E000C7807 /* FunPlusAdjust */,
 				D765A4031DCC710E000C7807 /* FunPlusAdjustTests */,
 				D765A3F71DCC710E000C7807 /* Products */,
@@ -87,6 +116,7 @@
 		D765A3F81DCC710E000C7807 /* FunPlusAdjust */ = {
 			isa = PBXGroup;
 			children = (
+				D7ADC2791DCD8C8F0042275E /* FunPlusAdjust.swift */,
 				D765A3F91DCC710E000C7807 /* FunPlusAdjust.h */,
 				D765A3FA1DCC710E000C7807 /* Info.plist */,
 			);
@@ -102,11 +132,14 @@
 			path = FunPlusAdjustTests;
 			sourceTree = "<group>";
 		};
-		D765A4111DCC714B000C7807 /* Products */ = {
+		D7ADC27C1DCD8C9C0042275E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D765A4161DCC714B000C7807 /* FunPlusSDK.framework */,
-				D765A4181DCC714B000C7807 /* FunPlusSDKTests.xctest */,
+				D7ADC2851DCD8C9C0042275E /* libAdjust.a */,
+				D7ADC2871DCD8C9C0042275E /* AdjustSdk.framework */,
+				D7ADC2891DCD8C9C0042275E /* AdjustSdkTv.framework */,
+				D7ADC28B1DCD8C9C0042275E /* libAdjustBridge.a */,
+				D7ADC28D1DCD8C9C0042275E /* AdjustTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +206,7 @@
 				TargetAttributes = {
 					D765A3F51DCC710E000C7807 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					D765A3FE1DCC710E000C7807 = {
@@ -193,8 +227,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D765A4111DCC714B000C7807 /* Products */;
-					ProjectRef = D765A4101DCC714B000C7807 /* FunPlusSDK.xcodeproj */;
+					ProductGroup = D7ADC27C1DCD8C9C0042275E /* Products */;
+					ProjectRef = D7ADC27B1DCD8C9C0042275E /* Adjust.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -206,18 +240,39 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D765A4161DCC714B000C7807 /* FunPlusSDK.framework */ = {
+		D7ADC2851DCD8C9C0042275E /* libAdjust.a */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FunPlusSDK.framework;
-			remoteRef = D765A4151DCC714B000C7807 /* PBXContainerItemProxy */;
+			fileType = archive.ar;
+			path = libAdjust.a;
+			remoteRef = D7ADC2841DCD8C9C0042275E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D765A4181DCC714B000C7807 /* FunPlusSDKTests.xctest */ = {
+		D7ADC2871DCD8C9C0042275E /* AdjustSdk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AdjustSdk.framework;
+			remoteRef = D7ADC2861DCD8C9C0042275E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D7ADC2891DCD8C9C0042275E /* AdjustSdkTv.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AdjustSdkTv.framework;
+			remoteRef = D7ADC2881DCD8C9C0042275E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D7ADC28B1DCD8C9C0042275E /* libAdjustBridge.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAdjustBridge.a;
+			remoteRef = D7ADC28A1DCD8C9C0042275E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D7ADC28D1DCD8C9C0042275E /* AdjustTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = FunPlusSDKTests.xctest;
-			remoteRef = D765A4171DCC714B000C7807 /* PBXContainerItemProxy */;
+			path = AdjustTests.xctest;
+			remoteRef = D7ADC28C1DCD8C9C0042275E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -244,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7ADC27A1DCD8C8F0042275E /* FunPlusAdjust.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,17 +424,23 @@
 		D765A40B1DCC710E000C7807 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FunPlusAdjust/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.FunPlusAdjust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -386,11 +448,16 @@
 		D765A40C1DCC710E000C7807 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FunPlusAdjust/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -404,6 +471,7 @@
 		D765A40E1DCC710E000C7807 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FunPlusAdjustTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.FunPlusAdjustTests;
@@ -415,6 +483,7 @@
 		D765A40F1DCC710E000C7807 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FunPlusAdjustTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.FunPlusAdjustTests;
